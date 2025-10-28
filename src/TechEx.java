@@ -34,4 +34,8 @@ public class TechEx {
 
 class cat extends Animal{
 
+    void hunt(){
+
+    }
+
 }

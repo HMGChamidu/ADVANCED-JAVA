@@ -5,21 +5,22 @@ public class TechEx {
 
     }
 }
-abstract class Animal{
+interface Animal {
+    void move();
 
-    abstract void move();
+    void eat();
+
+    void sleep();
 
 }
+class Dog implements Animal{
+    public void move(){
 
-abstract class Fish extends Animal{
-    void move(){
-        System.out.println("Swim");
     }
+    public void eat(){
 
-}
+    }
+    public void sleep(){
 
-abstract class Bird extends Animal{
-         void move(){
-             System.out.println("Fly");
-         }
+    }
 }

@@ -2,29 +2,24 @@ import groovy.console.ui.AstBrowser;
 
 public class TechEx {
     public static void main(String[] args) {
-     BMW bmw = new BMW();
-     bmw.driveFast();
-     bmw.drive();
-     bmw.racing();
 
     }
 }
+abstract class Animal{
 
-  class vehicle{
-    void drive(){
-        System.out.println("Drive");
+    abstract void move();
+
+}
+
+abstract class Fish extends Animal{
+    void move(){
+        System.out.println("Swim");
     }
 
-  }
+}
 
- class car extends vehicle{
-    void racing(){
-        System.out.println("Racing");
-    }
- }
-
-class BMW extends car{
-    void driveFast(){
-        System.out.println("Drive Fast");
-    }
+abstract class Bird extends Animal{
+         void move(){
+             System.out.println("Fly");
+         }
 }

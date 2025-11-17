@@ -2,27 +2,29 @@ package Day4;
 
 public class Main {
     public static void main(String[] args) {
-        Animal a1 = new Animal("Dog");
-        Animal a2 = new Animal("Cat");
-        Animal a3 = new Animal("Fish");
 
-        a1.printName();
-        a2.printName();
-        a3.printName();
+   Student s = new Student("Chamidu" , 22, "chamidusandeepa339@gmail.com");
+
+
 
 
     }
 }
 
-class Animal{
+class Student{
     String name;
+    int age;
+    String email;
 
-    public Animal (String _name){
-        name = _name;
-    }
+    Student(String name, int age, String email){
+           this();
+           this.name = name;
+           this.age = age;
+           this.email = email;
 
-    void printName(){
-        System.out.println(this.name);
+
     }
-    
+    Student(){
+        System.out.println("Student is created");
+    }
 }
